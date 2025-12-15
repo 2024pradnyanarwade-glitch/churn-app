@@ -1,0 +1,18 @@
+# .streamlit/config.toml
+[runner]
+# Set the desired Python version.
+# We use 3.11 for stability with scikit-learn 1.4.0
+magicEnabled = true
+
+[server]
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[global]
+# **THIS LINE IS CRUCIAL** - It tells Streamlit to use Python 3.11
+# You might need to change this if your Colab was older (e.g., python3.10)
+# but 3.11 is a good starting point for modern models.
+python = "3.11"
